@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        body::before{
+        content:"";
+        width:100%;
+        height:100%;
+        background-attachment: fixed;
+        top: 0;
+        position: fixed;
+        background-image: url(https://cdn.pixabay.com/photo/2016/08/13/23/13/news-1591767_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        filter: blur(5px);
+        z-index: -1;
+    } 
+        .main{
+            margin:200px 300px 70px 450px;
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.315);
+            padding: 10px;
+            box-shadow: 0px 20px 30px ;
+        }
+        .c1{
+            background-color: rgba(0, 0, 0, 0.495);
+            padding: 10px;
+        }
+        .c2{
+            margin-right: 10px;
+            color: white;
+        }
+        #input{
+            width:760px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .button{
+            margin-top: 20px;
+            background-color: rgba(0, 255, 255, 0.226);
+        }
+        #butt{
+            background-color: rgba(0, 255, 255, 0.566);
+            border: none;
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       
+        
+                <div class="header">
+                    <h1 style="color: #fde8ce;font-weight: bolder">CSS Newsletter</h1>
+                </div>
+            <div class="c1">
+                
+                <h2 style="color: rgb(255, 254, 224);font-weight: bolder">Subscribee to our Newsletter</h2>
+                <p class="para" style="color: white;font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus culpa deleniti delectus ullam dolor. Odio nulla quo eos doloremque asperiores veniam aliquam dolor. Dolorem quis hic in iusto omnis nesciunt.</p>
+            </div>
+      
+            <div class="c2">
+                
+                <input id="input" placeholder="Name" type="text"><br>
+                <input id="input" placeholder="Email" type="email"><br>
+                <input type="checkbox"><label >Daily Newsletter</label>
+            </div>
+            <div class="button">
+                
+                    <button id="butt">Subscribe</button>
+                </div>
+            </div>
+</body>
+</html>
